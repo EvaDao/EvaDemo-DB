@@ -1,0 +1,3 @@
+﻿CREATE TYPE [dbo].[LoginName]
+    FROM NVARCHAR (20) NOT NULL;
+

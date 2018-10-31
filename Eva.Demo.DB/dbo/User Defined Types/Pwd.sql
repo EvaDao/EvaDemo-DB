@@ -1,0 +1,3 @@
+﻿CREATE TYPE [dbo].[Pwd]
+    FROM NVARCHAR (80) NOT NULL;
+

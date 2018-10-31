@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>Eva.Demo.DB</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{cf1c3ea0-1aaa-4a90-81c8-4019c740cfb9}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>RTSB.DB</RootNamespace>
+    <AssemblyName>RTSB.DB</AssemblyName>
+    <ModelCollation>2052,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>Chinese_PRC_CI_AS</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="auth\" />
+    <Folder Include="auth\Tables\" />
+    <Folder Include="core\" />
+    <Folder Include="core\Tables\" />
+    <Folder Include="shop" />
+    <Folder Include="shop\Tables" />
+    <Folder Include="core\Functions\" />
+    <Folder Include="acct\" />
+    <Folder Include="acct\Functions\" />
+    <Folder Include="auth\Functions\" />
+    <Folder Include="core\Stored Procedures\" />
+    <Folder Include="invt" />
+    <Folder Include="invt\Tables" />
+    <Folder Include="dbo" />
+    <Folder Include="dbo\User Defined Types" />
+    <Folder Include="svc" />
+    <Folder Include="svc\Stored Procedures" />
+    <Folder Include="svc\Functions" />
+    <Folder Include="core\seq" />
+    <Folder Include="loc" />
+    <Folder Include="loc\Functions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="auth\Tables\_UserRole.sql" />
+    <Build Include="auth\Tables\_Authentication.sql" />
+    <Build Include="auth\Tables\_Role.sql" />
+    <Build Include="core\Tables\_User.sql" />
+    <Build Include="shop\Tables\_Order.sql" />
+    <Build Include="core\Functions\User_Type.sql" />
+    <Build Include="acct\Functions\Money_Of.sql" />
+    <Build Include="acct\Functions\Currency_ID.sql" />
+    <Build Include="auth\Functions\Authentication_Verify.sql" />
+    <Build Include="core\Stored Procedures\User_Add.sql" />
+    <Build Include="invt\invt.sql" />
+    <Build Include="acct\acct.sql" />
+    <Build Include="auth\auth.sql" />
+    <Build Include="core\core.sql" />
+    <Build Include="shop\shop.sql" />
+    <Build Include="invt\Tables\_Product.sql" />
+    <Build Include="dbo\User Defined Types\Address.sql" />
+    <Build Include="dbo\User Defined Types\Alias.sql" />
+    <Build Include="dbo\User Defined Types\Country.sql" />
+    <Build Include="dbo\User Defined Types\Email.sql" />
+    <Build Include="dbo\User Defined Types\LoginName.sql" />
+    <Build Include="dbo\User Defined Types\Phone.sql" />
+    <Build Include="dbo\User Defined Types\Pwd.sql" />
+    <Build Include="auth\Functions\User_Login.sql" />
+    <Build Include="auth\Functions\User_RoleIDs.sql" />
+    <Build Include="auth\Functions\Role_ID.sql" />
+    <Build Include="core\Stored Procedures\User_Register.sql" />
+    <Build Include="core\seq\UserSeq.sql" />
+    <Build Include="loc\Functions\Comma_Slice.sql" />
+    <Build Include="loc\Functions\Spr_Split.sql" />
+    <Build Include="loc\loc.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Eva.Demo.DB.publish.xml" />
+  </ItemGroup>
+</Project>

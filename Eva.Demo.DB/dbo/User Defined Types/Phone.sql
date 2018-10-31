@@ -1,0 +1,3 @@
+﻿CREATE TYPE [dbo].[Phone]
+    FROM NVARCHAR (20) NOT NULL;
+

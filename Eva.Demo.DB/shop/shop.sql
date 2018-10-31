@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [shop]
+    AUTHORIZATION [dbo];
+
