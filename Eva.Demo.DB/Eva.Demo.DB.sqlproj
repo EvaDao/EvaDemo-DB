@@ -77,7 +77,7 @@
     <Folder Include="svc" />
     <Folder Include="svc\Stored Procedures" />
     <Folder Include="svc\Functions" />
-    <Folder Include="core\seq" />
+    <Folder Include="core\Seq" />
     <Folder Include="loc" />
     <Folder Include="loc\Functions" />
   </ItemGroup>
