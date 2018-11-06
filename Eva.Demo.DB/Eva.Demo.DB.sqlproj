@@ -80,6 +80,7 @@
     <Folder Include="core\Seq" />
     <Folder Include="loc" />
     <Folder Include="loc\Functions" />
+    <Folder Include="invt\Functions" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="auth\Tables\_UserRole.sql" />
@@ -113,6 +114,8 @@
     <Build Include="loc\Functions\Comma_Slice.sql" />
     <Build Include="loc\Functions\Spr_Split.sql" />
     <Build Include="loc\loc.sql" />
+    <Build Include="invt\Functions\Product_List.sql" />
+    <Build Include="invt\Functions\Product_Detail.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Eva.Demo.DB.publish.xml" />
