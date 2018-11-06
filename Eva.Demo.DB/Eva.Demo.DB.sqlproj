@@ -81,6 +81,7 @@
     <Folder Include="loc" />
     <Folder Include="loc\Functions" />
     <Folder Include="invt\Functions" />
+    <Folder Include="initData" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="auth\Tables\_UserRole.sql" />
@@ -116,6 +117,9 @@
     <Build Include="loc\loc.sql" />
     <Build Include="invt\Functions\Product_List.sql" />
     <Build Include="invt\Functions\Product_Detail.sql" />
+    <Build Include="acct\Functions\Money_Raw.sql" />
+    <None Include="initData\initData.auth.sql" />
+    <None Include="initData\initData.invt.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Eva.Demo.DB.publish.xml" />
