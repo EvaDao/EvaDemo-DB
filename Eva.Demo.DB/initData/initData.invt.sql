@@ -2,7 +2,7 @@
 (		Description
 ,		DetailInfo
 ,		TotalQty, LockedQty, Price)
-select	N'HongKong local truck service'
+select	concat(format(getutcdate(), 'HH-mm-ss yyyy-MM-dd '),N'HongKong local truck service')
 ,		N'You can use our truck service for trans.'
 ,		2000,     310,       x.RawAmt
 from	acct.Currency#ID() k
