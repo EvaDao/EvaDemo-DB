@@ -120,6 +120,9 @@
     <Build Include="acct\Functions\Money_Raw.sql" />
     <None Include="initData\initData.auth.sql" />
     <None Include="initData\initData.invt.sql" />
+    <Build Include="svc\Functions\Product_Detail.sql" />
+    <Build Include="svc\Functions\Product_List.sql" />
+    <Build Include="svc\svc.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Eva.Demo.DB.publish.xml" />
