@@ -91,7 +91,7 @@
     <Build Include="acct\Functions\Money_Of.sql" />
     <Build Include="acct\Functions\Currency_ID.sql" />
     <Build Include="auth\Functions\Authentication_Verify.sql" />
-    <Build Include="core\Stored Procedures\User_Add.sql" />
+    <Build Include="core\Stored Procedures\User_Insert.sql" />
     <Build Include="invt\invt.sql" />
     <Build Include="acct\acct.sql" />
     <Build Include="auth\auth.sql" />
@@ -108,7 +108,7 @@
     <Build Include="auth\Functions\User_Login.sql" />
     <Build Include="auth\Functions\User_RoleIDs.sql" />
     <Build Include="auth\Functions\Role_ID.sql" />
-    <Build Include="core\Stored Procedures\User_Register.sql" />
+    <Build Include="core\Stored Procedures\User_Add.sql" />
     <Build Include="core\seq\UserSeq.sql" />
     <Build Include="loc\Functions\Comma_Slice.sql" />
     <Build Include="loc\Functions\Spr_Split.sql" />
@@ -124,5 +124,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Eva.Demo.DB.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="Eva.Demo.DB.refactorlog" />
   </ItemGroup>
 </Project>
