@@ -121,6 +121,7 @@
     <Build Include="shop\Functions\Product_Detail.sql" />
     <Build Include="shop\Functions\Product_List.sql" />
     <Build Include="shop\Functions\User_Login.sql" />
+    <Build Include="core\Stored Procedures\User_Register.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Eva.Demo.DB.publish.xml" />
