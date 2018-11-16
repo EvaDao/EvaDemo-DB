@@ -125,6 +125,7 @@
     <Build Include="core\Stored Procedures\User_Register.sql" />
     <Build Include="shop\Stored Procedures\User_Register.sql" />
     <Build Include="core\Stored Procedures\User_Update.sql" />
+    <Build Include="shop\Stored Procedures\User_Update.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Eva.Demo.DB.publish.xml" />
