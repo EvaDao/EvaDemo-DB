@@ -125,7 +125,4 @@
   <ItemGroup>
     <None Include="Eva.Demo.DB.publish.xml" />
   </ItemGroup>
-  <ItemGroup>
-    <RefactorLog Include="Eva.Demo.DB.refactorlog" />
-  </ItemGroup>
 </Project>
