@@ -74,14 +74,12 @@
     <Folder Include="invt\Tables" />
     <Folder Include="dbo" />
     <Folder Include="dbo\User Defined Types" />
-    <Folder Include="svc" />
-    <Folder Include="svc\Stored Procedures" />
-    <Folder Include="svc\Functions" />
     <Folder Include="core\Seq" />
     <Folder Include="loc" />
     <Folder Include="loc\Functions" />
     <Folder Include="invt\Functions" />
     <Folder Include="initData" />
+    <Folder Include="shop\Functions" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="auth\Tables\_UserRole.sql" />
@@ -120,9 +118,9 @@
     <Build Include="acct\Functions\Money_Raw.sql" />
     <None Include="initData\initData.auth.sql" />
     <None Include="initData\initData.invt.sql" />
-    <Build Include="svc\Functions\Product_Detail.sql" />
-    <Build Include="svc\Functions\Product_List.sql" />
-    <Build Include="svc\svc.sql" />
+    <Build Include="shop\Functions\Product_Detail.sql" />
+    <Build Include="shop\Functions\Product_List.sql" />
+    <Build Include="shop\Functions\User_Login.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Eva.Demo.DB.publish.xml" />

@@ -1,5 +1,5 @@
 ﻿--Eva
-CREATE	FUNCTION	[svc].[Product$Detail](@id bigint)
+CREATE	FUNCTION	[shop].[Product$Detail](@id bigint)
 RETURNS TABLE
 AS RETURN
 (
