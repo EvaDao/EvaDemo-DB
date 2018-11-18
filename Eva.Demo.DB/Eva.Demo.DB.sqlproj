@@ -129,6 +129,12 @@
     <Build Include="shop\Stored Procedures\User_Update.sql" />
     <Build Include="invt\Stored Procedures\Product_Add.sql" />
     <Build Include="shop\Stored Procedures\Product_Add.sql" />
+    <Build Include="invt\Stored Procedures\Product_Edit.sql" />
+    <Build Include="shop\Stored Procedures\Product_Edit.sql" />
+    <Build Include="invt\Stored Procedures\Product_Delete.sql" />
+    <Build Include="invt\Tables\_XProduct.sql" />
+    <Build Include="loc\Functions\Spr_Const.sql" />
+    <Build Include="shop\Stored Procedures\Product_Delete.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Eva.Demo.DB.publish.xml" />

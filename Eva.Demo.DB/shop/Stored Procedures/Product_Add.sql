@@ -1,5 +1,5 @@
 ﻿--Eva
-CREATE PROCEDURE shop.Product#$dd
+CREATE PROCEDURE shop.Product$Add
 (
 	@description nvarchar(200), @detailInfo nvarchar(200), @price bigint, @qty int
 )
