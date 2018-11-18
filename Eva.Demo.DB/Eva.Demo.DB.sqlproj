@@ -81,6 +81,7 @@
     <Folder Include="initData" />
     <Folder Include="shop\Functions" />
     <Folder Include="shop\Stored Procedures" />
+    <Folder Include="invt\Stored Procedures" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="auth\Tables\_UserRole.sql" />
@@ -126,6 +127,8 @@
     <Build Include="shop\Stored Procedures\User_Register.sql" />
     <Build Include="core\Stored Procedures\User_Update.sql" />
     <Build Include="shop\Stored Procedures\User_Update.sql" />
+    <Build Include="invt\Stored Procedures\Product_Add.sql" />
+    <Build Include="shop\Stored Procedures\Product_Add.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Eva.Demo.DB.publish.xml" />
