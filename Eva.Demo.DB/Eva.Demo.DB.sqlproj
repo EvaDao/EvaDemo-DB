@@ -137,8 +137,10 @@
     <Build Include="shop\Stored Procedures\Product_Delete.sql" />
     <Build Include="core\Functions\User_Info.sql" />
     <Build Include="shop\Functions\User_Info.sql" />
+    <None Include="initData\initData.user.buyer.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Eva.Demo.DB.publish.xml" />
+    <None Include="initData\initData.user.admin.sql" />
   </ItemGroup>
 </Project>
