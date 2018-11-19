@@ -1,7 +1,7 @@
 ﻿--Eva
 CREATE PROCEDURE core.User#Register
 (
-	@name  Alias, @pwd Pwd
+	@name  Alias, @pwd Pwd, @userID bigint out
 )
 AS
 BEGIN
@@ -11,8 +11,7 @@ BEGIN
 	BEGIN TRY
 		BEGIN	TRAN;
 
-		declare	@userID bigint
-		,		@type   tinyint=(select Customer from core.User#Type());
+		declare	@type   tinyint=(select Customer from core.User#Type());
 		select	@userID=next value for UserSeq;
 		insert	core._User
 		(		     ID,  Type,  Name)

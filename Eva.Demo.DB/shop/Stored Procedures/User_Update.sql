@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE shop.User#Update
+﻿CREATE PROCEDURE shop.User$Update
 (
 	@userID bigint, @surname Alias, @phone Phone, @email Email, @country Country,
 	@state   Alias, @city    Alias, @address1 Address, @address2 Address

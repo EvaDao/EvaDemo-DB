@@ -135,6 +135,8 @@
     <Build Include="invt\Tables\_XProduct.sql" />
     <Build Include="loc\Functions\Spr_Const.sql" />
     <Build Include="shop\Stored Procedures\Product_Delete.sql" />
+    <Build Include="core\Functions\User_Info.sql" />
+    <Build Include="shop\Functions\User_Info.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Eva.Demo.DB.publish.xml" />
